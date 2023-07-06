@@ -128,7 +128,7 @@ function Footer() {
               </div>
               <div className="col-lg-6 col-sm-12">
                 <p className="text-lg-end text-center text-light light-300">
-                  Designed by <a rel="noreferrer" className="text-decoration-none text-light" href="https://www.onedotall.in" target="_blank"><strong>Utsav Chabhadiya</strong></a>
+                  Designed by <a rel="noreferrer" className="text-decoration-none text-light" href="https://utsavchab.me" target="_blank"><strong>Utsav Chabhadiya</strong></a>
                 </p>
               </div>
             </div>
