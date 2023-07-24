@@ -16,7 +16,7 @@ import { useDispatch, useSelector } from 'react-redux';
   const{loading, err, studentInfo} = studentLogin
   useEffect(() => {
     if(studentInfo) {
-      history.push('/student_dashboard')
+      history.push('/student/dashboard')
     }
   }, [history, studentInfo])
 
@@ -43,7 +43,7 @@ import { useDispatch, useSelector } from 'react-redux';
   }
 
   // if(registState){
-  //   return <Redirect to = "/student_login"></Redirect>
+  //   return <Redirect to = "/student/login"></Redirect>
   // }
 
   return (
@@ -114,7 +114,7 @@ import { useDispatch, useSelector } from 'react-redux';
                 </form>
               </div>
               <div className="col-10 col-md-8 mx-auto my-5 d-flex justify-content-around">
-                <NavLink to="/student_login" exact>
+                <NavLink to="/student/login" exact>
                   <button type="button" className="btn rounded-pill btn-light px-4">Student Login</button>
                 </NavLink>
                 <NavLink to="/teacher_login" exact>

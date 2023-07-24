@@ -17,9 +17,9 @@ function StudentLogin() {
 
   useEffect(() => {
     // console.log("useeffect")
-    console.log(studentInfo)
+    // console.log(studentInfo)
     if(studentInfo) {
-      history.replace('/student_dashboard')
+      history.replace('/student/dashboard')
     }
   }, [history, studentInfo])
 
@@ -39,7 +39,7 @@ function StudentLogin() {
   }
   
   // if(isStudentLogin){
-  //   return <Redirect to = "/student_dashboard"></Redirect>
+  //   return <Redirect to = "/student/dashboard"></Redirect>
 
   // }else{
   return (
@@ -69,7 +69,7 @@ function StudentLogin() {
                 </form>
               </div>
               <div className=" mx-auto  my-5 d-flex flex-column justify-content-around">
-              <NavLink to="/student_register" exact>
+              <NavLink to="/student/register" exact>
                   <button type="submit" className="btn rounded-pill btn-outline-info px-5 mb-3">Student Register</button>
                 </NavLink>
 

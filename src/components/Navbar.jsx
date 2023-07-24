@@ -55,8 +55,12 @@ function Navbar() {
             </ul>
             <div className="navbar align-self-center d-flex">
               {studentInfo && <>
-                  <NavLink className="nav-link text-success" to="/student_dashboard" exact title="Dashboard">
+                {/* {console.log(studentInfo)} */}
+                  <NavLink className="nav-link text-success" to="/student/profile" exact title="Dashboard">
                     Hi, <strong>{studentInfo.stud_name}</strong>
+                  </NavLink>
+                  <NavLink className="nav-link text-success" to="/student/dashboard" exact title="Dashboard">
+                    <button className="btn" role="img" style={{backgroundColor : "#5A4BDA", color : "white" ,  fontWeight : "500" }}> My Dashboard </button>
                   </NavLink>
                   <NavLink className="nav-link" to="/notices" exact title="Notices">
                     <i className="bi-bell text-primary" role="img"></i>
@@ -68,9 +72,12 @@ function Navbar() {
 
               {teacherInfo && 
                 <>
-                  {console.log(teacherInfo)}
+                  {/* {console.log(teacherInfo)} */}
                   <NavLink className="nav-link text-success" to="/teacher_dashboard" exact title="Dashboard">
                     Hi, <strong>{teacherInfo.tchr_name}</strong>
+                  </NavLink>
+                  <NavLink className="nav-link text-success" to="/teacher_dashboard" exact title="Dashboard">
+                    <button className="btn" role="img" style={{backgroundColor : "#5A4BDA", color : "white" ,  fontWeight : "500" }}> My Dashboard </button>
                   </NavLink>
                   <NavLink className="nav-link" to="/notices" exact title="Notices">
                     <i className="bi-bell text-primary" role="img"></i>
@@ -82,11 +89,11 @@ function Navbar() {
               }
               {(!studentInfo &&  !teacherInfo) &&
                   <>
-                  {console.log(studentInfo)}
+                  
                     <NavLink className="nav-link" to="/notices" exact title="Notices">
                       <i className="bi-bell text-primary" role="img"></i>
                     </NavLink>
-                    <NavLink className="nav-link" to="/student_login" exact title="Student">
+                    <NavLink className="nav-link" to="/student/login" exact title="Student">
                       <button className="btn  " role="img" style={{backgroundColor : "#5A4BDA", color : "white" ,  fontWeight : "500" }}>Login / Register</button>
                     </NavLink>
                     {/* <NavLink className="nav-link" to="/teacher_login" exact title="Teacher">

@@ -20,7 +20,7 @@ return(
         {studentInfo  && <h1> Hi, {studentInfo.stud_name}</h1>}
         <h1>Either you entered wrong URL</h1>
         <h1>OR </h1>
-        <h1>This Page is Under Construction ans will be Live soon.</h1>
+        <h1>This Page is Under Construction and will be Live soon.</h1>
         
     </div>
 )

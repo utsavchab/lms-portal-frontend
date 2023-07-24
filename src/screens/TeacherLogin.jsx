@@ -57,7 +57,7 @@ function TeacherLogin({history}) {
                 </form>
               </div>
               <div className="col-10 col-md-8 mx-auto my-5 d-flex flex-column justify-content-around">
-                <NavLink to="/student_login" exact>
+                <NavLink to="/student/login" exact>
                   <button type="button" className="btn rounded-pill btn-outline-info px-5 mb-4">Student Login</button>
                 </NavLink>
                 <NavLink to="/teacher_register" exact>

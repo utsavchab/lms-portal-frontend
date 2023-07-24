@@ -97,7 +97,7 @@ function TeacherRegister({history}) {
                 <NavLink to="/teacher_login" exact>
                   <button type="button" className="btn rounded-pill btn-light px-4">Teacher Login</button>
                 </NavLink>
-                <NavLink to="/student_login" exact>
+                <NavLink to="/student/login" exact>
                   <button type="button" className="btn rounded-pill btn-outline-info px-4">Student Login</button>
                 </NavLink>
               </div>

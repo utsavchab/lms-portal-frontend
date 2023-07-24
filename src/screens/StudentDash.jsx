@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { useSelector } from 'react-redux';
 import bck from "../assets/img/workspace.jpg";
-import Footer from '../components/Footer';
+
 import { NavLink } from "react-router-dom";
 
 function StudentDash({history}) {
@@ -10,11 +10,12 @@ function StudentDash({history}) {
 
   useEffect(() => {
     if(!studentInfo) {
-      history.push('/student_login')
+      history.push('/student/login')
     }
   }, [history, studentInfo])
 
   return (
+
     <div>
       <section>
         <div id="page_banner2" className="banner-wrapper bg-light w-100 py-5 user-select-nonef">
@@ -24,7 +25,7 @@ function StudentDash({history}) {
               
               <div className="row gx-5 gx-sm-3 gx-lg-5 gy-lg-5 gy-3 pb-3 m-0 d-flex justify-content-center">
                 <div className="col-xl-3 col-md-4 col-sm-6">
-                  <NavLink to="/student/enroll_course" exact className="course card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                  <NavLink to="/student/enrolled_course" exact className="course card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
                     <img className="course card-img" src={bck} alt="courseImage"/>
                     <div className="course-vertical card-img-overlay d-flex align-items-end">
                       <div className="course-content text-left text-light">
@@ -35,7 +36,7 @@ function StudentDash({history}) {
                 </div>
 
                 <div className="col-xl-3 col-md-4 col-sm-6">
-                  <NavLink to="/student/enroll_test" exact className="course card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                  <NavLink to="/student/enrolled_test" exact className="course card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
                     <img className="course card-img" src={bck} alt="courseImage"/>
                     <div className="course-vertical card-img-overlay d-flex align-items-end">
                       <div className="course-content text-left text-light">
@@ -73,6 +74,7 @@ function StudentDash({history}) {
       </section>
       {/* <Footer/> */}
     </div>
+    
   )
 }
 
