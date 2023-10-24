@@ -89,16 +89,12 @@ function Navbar() {
               }
               {(!studentInfo &&  !teacherInfo) &&
                   <>
-                  
                     <NavLink className="nav-link" to="/notices" exact title="Notices">
                       <i className="bi-bell text-primary" role="img"></i>
                     </NavLink>
                     <NavLink className="nav-link" to="/student/login" exact title="Student">
                       <button className="btn  " role="img" style={{backgroundColor : "#5A4BDA", color : "white" ,  fontWeight : "500" }}>Login / Register</button>
                     </NavLink>
-                    {/* <NavLink className="nav-link" to="/teacher_login" exact title="Teacher">
-                      <button className="btn btn-primary" role="img">Teacher Login/Register</button>
-                    </NavLink> */}
                   </>
                 }        
         

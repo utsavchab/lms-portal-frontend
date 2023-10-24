@@ -51,6 +51,7 @@ export const logout = () => (dispatch) => {
 }
 
 export const register = (tchr_name, tchr_email, password, tchr_mobile, tchr_address) => async (dispatch) => {
+	
 	try {
 		dispatch({
 			type: TEACHER_REGISTER_REQUEST

@@ -76,6 +76,7 @@ export const getSpecificCourses = () => async (dispatch, getState) => {
 }
 
 export const createCourse = (course_name, course_outline, total_units) => async (dispatch, getState) => {
+  
   try {
     dispatch({
       type: COURSE_CREATE_REQUEST,

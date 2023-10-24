@@ -70,6 +70,7 @@ export const studentLogout = () => (dispatch) => {
 }
 
 export const register = (name, email, password, mobile, address) => async (dispatch) => {
+	
 	try {
 		dispatch({
 			type: STUDENT_REGISTER_REQUEST
